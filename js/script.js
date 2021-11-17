@@ -1,4 +1,5 @@
 function sortear() {
+
     var audio = document.getElementById("audio");
     audio.play();
 
@@ -36,19 +37,19 @@ function buscarItem(item) {
         }
         return item;
     } else {
-        var nomes = $("#quantidadeDeHoras").val().split('\n');
+        var nomes = $("#nomesInformados").val().split('\n');
         var nomesChave= [];
     
         var str = "";
         var id = 0;
         for (nome of nomes) {
             nomesChave[id] = {id, nome};
-            str += "<input id=\"" + id + "\" value=\"" +nome + "\" disabled=\"true\"/><br>";
+            str += "<input id=\"" + id + "\" value=\"" +nome + "\" disabled=\"true\" type=\"text\" class=\"form-control\"/><br>";
             id += 1;
         }
     
         document.querySelector("#resultado").innerHTML = str;
-        $("#quantidadeDeHoras").css("display", "none");
+        $("#nomesInformados").css("display", "none");
     
         $("#nomeSorteado").css("display", "");
     

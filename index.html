@@ -12,7 +12,7 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Cálculo de horas</title>
+    <title>Sorteador de nomes</title>
 </head>
 
 <body>
@@ -21,34 +21,25 @@
 
         <div class="div-center">
             <div class="div-container">
-                
-                <textarea id="quantidadeDeHoras" style="height: 350px;" >Patrick
-Patricia
-Roberson
-Larissa
-Heberth
-Nathalia
-Luiz Moço</textarea>
+                <textarea id="nomesInformados" style="height: 350px;" class="form-control" ></textarea>
                 <br>
                 <!-- Button trigger modal -->
-                <button id="btnSortear" type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal" onclick="sortear()">
+                <button id="btnSortear" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" onclick="sortear()">
 					Sortear
 				</button>
             </div>
 
-            
             <div id="resultado" ></div>
 
             <audio id="audio" src="sons/Big Explosion Cut Off.mp3"></audio>
             <div id="spinner" style="display: none; justify-content: center;">
                 <img src="images/fireworks.gif" />
                 <br>
-                <input id="nomeSorteado" style="display: none;" />
+                <input id="nomeSorteado" style="display: none;" type="text" class="form-control" />
             </div>
+
         </div>
     </div>
-
-            
 
 </body>
 
