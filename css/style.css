@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #103858;
+}
+
+b {
+    align-self: center;
+    color: #fff;
+}
+
+.div-main {
+    width: 100%;
+    text-align: center;
+}
+
+.div-left {
+    padding: 16px;
+    float: left;
+    width: 30%;
+}
+
+.div-center {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 16px;
+    width: 40%;
+}
+
+.div-right {
+    padding: 16px;
+    float: right;
+    width: 30%;
+}
+
+.div-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.time {
+    padding: 2px;
+}
+
+.button {
+    background-color: #009688;
+    color: #F5F5F5;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    transition: background-color .3s;
+}
+
+.block {
+    background: rgba(0, 0, 0, .3) url('../images/loading.gif') no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
